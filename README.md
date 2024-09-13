@@ -11,7 +11,10 @@ Stream: Flujo en el que se envían los datos, puede ser cualquier puerto serie d
 DeviceAddress: Dirección del dispositivo, en forma predeterminada es la dirección 0x01;
 
 ## Escritura de datos:
+
+```c++
 psu.write(Parametro, Valor);
+```
 Parametro: Alguna de las siguientes opciones (ver archivo en carpeta doc):
   U_SET,
   I_SET,
