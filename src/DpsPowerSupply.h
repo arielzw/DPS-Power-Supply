@@ -24,7 +24,7 @@ typedef enum Address {
 
 class DPS_psu {
 public:
-	DPS_psu(Stream &, u_int8_t);
+	DPS_psu(Stream &, uint8_t);
 	void write(Address, uint16_t);
 	uint16_t read(Address);
 	void writeVoltageCurrent(uint16_t centiVolts, uint16_t centiAmps);
