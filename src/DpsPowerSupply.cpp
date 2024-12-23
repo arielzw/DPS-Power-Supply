@@ -3,10 +3,8 @@
 
 DPS_psu::DPS_psu(Stream &stream, uint8_t deviceAddress)
   : stream(&stream), deviceAddress(deviceAddress) {
- 
-  crc_tab16_init = false;
-  stream.readBytes(buffer, 5);  //Lectura para eliminar ruidos
-}
+   crc_tab16_init = false;
+ }
 
 void DPS_psu::write(Address registerAddress, uint16_t value){
   sendDataSingle(WRITE_REG, registerAddress, value);
